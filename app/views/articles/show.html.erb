@@ -1,0 +1,22 @@
+<h3><%= @article.headline%></h3>
+<h5><%= @article.summary%></h5>
+<p><%= @article.body%></p>
+<p><%= @article.conclusion%></p>
+<p><%= @article.friendly_id%></p>
+
+
+
+
+ <%= link_to  'edit', edit_article_path(@article) %> 
+ <%= link_to  'back', articles_path %> 
+ <div class="float-right">
+ <%= link_to "Comment", new_article_comment_path(@article), :class => 'btn btn-success btn-md' %>
+</div>
+
+
+
+
+
+
+
+ 
